@@ -8,14 +8,12 @@ get '/' do
 end
 
 get '/years' do
-
-
-
-  # code!
+  years = Array(1971..2012)
   erb :years, layout: :main
 end
 
 get '/states' do
-  # code!
+  states=["Ohio", "Illinois", "Florida", "California", "Oregon"]
+  states.sort!
   erb :states, layout: :main
 end

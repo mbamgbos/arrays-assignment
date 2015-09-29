@@ -1,6 +1,13 @@
 <h1>State List</h1>
 
 <p>here is a list of states...</p>
-
+years.clear
+	
 <!-- iterate through each state in the array and put them into list items individually -->
+
+<ul>
+  <% @years.each do | year | %>
+    <li><%= year %></li>
+  <% end %>
+</ul>
 
